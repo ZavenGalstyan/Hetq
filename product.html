@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-product-name>Product — HETQ</title>
+<meta name="description" content="Shop this HETQ essential.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+
+<div class="announcement-bar">Free shipping on orders over $100</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">HETQ</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?category=T-Shirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+      <a href="shop.html#new">New Arrivals</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-trigger aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <span class="badge-count" data-wishlist-count>0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="badge-count" data-cart-count>0</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay-backdrop" data-overlay-backdrop></div>
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav-head">
+    <span class="logo">HETQ</span>
+    <button class="icon-btn" data-mobile-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=T-Shirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+    <a href="shop.html#new">New Arrivals</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
+</div>
+
+<div class="search-overlay" data-search-overlay>
+  <button class="icon-btn search-close" data-search-close aria-label="Close search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+  </button>
+  <div class="search-overlay-inner">
+    <span class="eyebrow">Search HETQ</span>
+    <div class="search-field">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search products..." data-search-input autocomplete="off">
+    </div>
+    <div data-search-results><p class="search-hint">Try "tee", "long sleeve", or a color.</p></div>
+  </div>
+</div>
+
+<main>
+  <div class="container" style="padding-top:24px;">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span data-product-category>Product</span></div>
+  </div>
+
+  <section class="section section-tight">
+    <div class="container product-detail">
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="gallery-main" data-gallery-main></div>
+        <div class="gallery-thumbs" data-gallery-thumbs></div>
+      </div>
+
+      <!-- Info -->
+      <div class="product-info-panel">
+        <div class="cat" data-product-category>Category</div>
+        <h1 data-product-name>Product Name</h1>
+        <div class="price" data-product-price>$0</div>
+        <p class="desc" data-product-desc>Description.</p>
+
+        <div class="option-block">
+          <div class="option-label">
+            <span class="name">Color</span>
+            <span class="selected">Selected: <span data-selected-color></span></span>
+          </div>
+          <div class="color-swatches" data-color-swatches></div>
+        </div>
+
+        <div class="option-block">
+          <div class="option-label">
+            <span class="name">Select Size</span>
+            <button class="size-guide-link" data-modal-open="[data-size-guide-modal]">Size Guide</button>
+          </div>
+          <div class="size-grid" data-size-grid></div>
+          <div class="validation-msg" data-size-validation></div>
+        </div>
+
+        <div class="option-block">
+          <div class="option-label"><span class="name">Quantity</span></div>
+          <div class="qty-selector">
+            <button data-qty-decrease aria-label="Decrease quantity">−</button>
+            <span class="qty-value" data-qty-value>1</span>
+            <button data-qty-increase aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <button class="btn btn-primary btn-block" data-add-to-cart>Add to Cart</button>
+          <div class="product-actions-row">
+            <button class="btn btn-secondary" data-wishlist-add>Add to Wishlist</button>
+            <button class="btn btn-outline" data-buy-now>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="meta-row">
+          <span>Free shipping over $100</span>
+          <span>·</span>
+          <span>Easy 30-day returns</span>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Description<span class="accordion-icon"></span></button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">Cut from premium cotton for a clean, considered silhouette. Designed in-house to be worn on repeat — pre-washed for softness and shape retention.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Materials<span class="accordion-icon"></span></button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">100% combed cotton, 220gsm. Ribbed collar. Reinforced seams for lasting wear.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Fit<span class="accordion-icon"></span></button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">True to size, with a relaxed cut through the body. Runs slightly boxy — size down for a slimmer look.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Care Instructions<span class="accordion-icon"></span></button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">Machine wash cold with like colors. Tumble dry low. Do not bleach. Iron on low heat if needed.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Shipping &amp; Returns<span class="accordion-icon"></span></button>
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">Free standard shipping on orders over $100. Returns accepted within 30 days of delivery, unworn and with tags attached.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- You May Also Like -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Complete the Look</span>
+          <h2 class="section-title">You May Also Like</h2>
+        </div>
+      </div>
+      <div class="product-grid" data-related-products></div>
+    </div>
+  </section>
+</main>
+
+<!-- Size Guide Modal -->
+<div class="modal-backdrop" data-size-guide-modal>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="sizeGuideTitle">
+    <div class="modal-head">
+      <h3 id="sizeGuideTitle">Size Guide</h3>
+      <button class="icon-btn" data-modal-close aria-label="Close size guide">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      </button>
+    </div>
+    <table class="size-guide-table">
+      <thead>
+        <tr><th>Size</th><th>Chest (in)</th><th>Length (in)</th><th>Sleeve (in)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>XS</td><td>34–36</td><td>26</td><td>7.5</td></tr>
+        <tr><td>S</td><td>37–39</td><td>27</td><td>8</td></tr>
+        <tr><td>M</td><td>40–42</td><td>28</td><td>8.5</td></tr>
+        <tr><td>L</td><td>43–45</td><td>29</td><td>9</td></tr>
+        <tr><td>XL</td><td>46–48</td><td>30</td><td>9.5</td></tr>
+        <tr><td>XXL</td><td>49–51</td><td>31</td><td>10</td></tr>
+      </tbody>
+    </table>
+    <p class="size-guide-note">Measurements are approximate. For long sleeves, sleeve length is measured from shoulder seam to cuff.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">HETQ</span>
+        <p>Everyday essentials. Nothing unnecessary.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
+          <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
+          <li><a href="shop.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="product.html">Size Guide</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HETQ</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Sign up for early access to new drops.</p>
+        <form class="footer-newsletter-form" data-newsletter-form novalidate>
+          <input type="email" placeholder="Email address" required aria-label="Email address">
+          <button type="submit" class="icon-btn" aria-label="Subscribe" style="background:var(--burgundy)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+        <p class="form-message" data-form-message></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 HETQ. All rights reserved.</span>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

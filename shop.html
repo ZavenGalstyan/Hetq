@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All — HETQ</title>
+<meta name="description" content="Shop the full HETQ range of T-Shirts and Long Sleeves.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+<div class="announcement-bar">Free shipping on orders over $100</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">HETQ</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?category=T-Shirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+      <a href="shop.html#new">New Arrivals</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-trigger aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <span class="badge-count" data-wishlist-count>0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="badge-count" data-cart-count>0</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay-backdrop" data-overlay-backdrop></div>
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav-head">
+    <span class="logo">HETQ</span>
+    <button class="icon-btn" data-mobile-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=T-Shirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+    <a href="shop.html#new">New Arrivals</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
+</div>
+
+<div class="search-overlay" data-search-overlay>
+  <button class="icon-btn search-close" data-search-close aria-label="Close search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+  </button>
+  <div class="search-overlay-inner">
+    <span class="eyebrow">Search HETQ</span>
+    <div class="search-field">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search products..." data-search-input autocomplete="off">
+    </div>
+    <div data-search-results><p class="search-hint">Try "tee", "long sleeve", or a color.</p></div>
+  </div>
+</div>
+
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Shop</div>
+    <h1>Shop All</h1>
+    <p>Every HETQ essential, in one place.</p>
+  </div>
+
+  <div class="container">
+    <div class="shop-toolbar">
+      <span class="shop-count" data-shop-count>8 Products</span>
+      <div class="shop-toolbar-right">
+        <button class="filter-toggle" data-filter-open>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="6" r="1.6" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="1.6" fill="currentColor" stroke="none"/></svg>
+          Filters
+        </button>
+        <select class="sort-select" data-sort-select aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="shop-layout">
+      <!-- Desktop Filters -->
+      <aside class="filters-panel">
+        <div class="filter-group">
+          <div class="filter-group-title">Category</div>
+          <label class="filter-option"><input type="radio" name="category" value="All" data-filter-category checked> All</label>
+          <label class="filter-option"><input type="radio" name="category" value="T-Shirts" data-filter-category> T-Shirts</label>
+          <label class="filter-option"><input type="radio" name="category" value="Long Sleeves" data-filter-category> Long Sleeves</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Size</div>
+          <div class="size-pills">
+            <button class="size-pill" data-filter-size="XS">XS</button>
+            <button class="size-pill" data-filter-size="S">S</button>
+            <button class="size-pill" data-filter-size="M">M</button>
+            <button class="size-pill" data-filter-size="L">L</button>
+            <button class="size-pill" data-filter-size="XL">XL</button>
+            <button class="size-pill" data-filter-size="XXL">XXL</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Color</div>
+          <div class="color-pills">
+            <button class="color-pill-swatch" style="background:#6D1F2B" data-filter-color="Burgundy" aria-label="Burgundy" title="Burgundy"></button>
+            <button class="color-pill-swatch" style="background:#F3EBDD" data-filter-color="Cream" aria-label="Cream" title="Cream"></button>
+            <button class="color-pill-swatch" style="background:#211A17" data-filter-color="Black" aria-label="Black" title="Black"></button>
+            <button class="color-pill-swatch" style="background:#6B4A38" data-filter-color="Brown" aria-label="Brown" title="Brown"></button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Price</div>
+          <input type="range" min="40" max="100" value="100" data-filter-price style="width:100%; accent-color:var(--burgundy);">
+          <div class="range-value" data-price-value>Up to $100</div>
+        </div>
+        <div class="filter-group">
+          <label class="filter-option"><input type="checkbox"> In Stock Only</label>
+        </div>
+        <button class="clear-filters" data-clear-filters>Clear All Filters</button>
+      </aside>
+
+      <div class="product-grid" data-shop-grid></div>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Filter Drawer -->
+<div class="filter-drawer-backdrop" data-filter-drawer-backdrop></div>
+<div class="filter-drawer" data-filter-drawer>
+  <div class="filter-drawer-head">
+    <h3>Filters</h3>
+    <button class="icon-btn" data-filter-drawer-close aria-label="Close filters">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+  <div class="filter-drawer-body">
+    <div class="filter-group">
+      <div class="filter-group-title">Category</div>
+      <label class="filter-option"><input type="radio" name="category-m" value="All" data-filter-category checked> All</label>
+      <label class="filter-option"><input type="radio" name="category-m" value="T-Shirts" data-filter-category> T-Shirts</label>
+      <label class="filter-option"><input type="radio" name="category-m" value="Long Sleeves" data-filter-category> Long Sleeves</label>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Size</div>
+      <div class="size-pills">
+        <button class="size-pill" data-filter-size="XS">XS</button>
+        <button class="size-pill" data-filter-size="S">S</button>
+        <button class="size-pill" data-filter-size="M">M</button>
+        <button class="size-pill" data-filter-size="L">L</button>
+        <button class="size-pill" data-filter-size="XL">XL</button>
+        <button class="size-pill" data-filter-size="XXL">XXL</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Color</div>
+      <div class="color-pills">
+        <button class="color-pill-swatch" style="background:#6D1F2B" data-filter-color="Burgundy" aria-label="Burgundy"></button>
+        <button class="color-pill-swatch" style="background:#F3EBDD" data-filter-color="Cream" aria-label="Cream"></button>
+        <button class="color-pill-swatch" style="background:#211A17" data-filter-color="Black" aria-label="Black"></button>
+        <button class="color-pill-swatch" style="background:#6B4A38" data-filter-color="Brown" aria-label="Brown"></button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-group-title">Price</div>
+      <input type="range" min="40" max="100" value="100" data-filter-price style="width:100%; accent-color:var(--burgundy);">
+      <div class="range-value" data-price-value>Up to $100</div>
+    </div>
+    <button class="clear-filters" data-clear-filters>Clear All Filters</button>
+  </div>
+  <div class="filter-drawer-foot">
+    <button class="btn btn-primary btn-block" data-filter-drawer-close>Show Results</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">HETQ</span>
+        <p>Everyday essentials. Nothing unnecessary.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
+          <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
+          <li><a href="shop.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="product.html">Size Guide</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HETQ</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Sign up for early access to new drops.</p>
+        <form class="footer-newsletter-form" data-newsletter-form novalidate>
+          <input type="email" placeholder="Email address" required aria-label="Email address">
+          <button type="submit" class="icon-btn" aria-label="Subscribe" style="background:var(--burgundy)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+        <p class="form-message" data-form-message></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 HETQ. All rights reserved.</span>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

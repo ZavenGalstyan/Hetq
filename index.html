@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HETQ — Essentials, Redefined.</title>
+<meta name="description" content="HETQ is a modern essentials brand crafting T-Shirts and Long Sleeves built around simplicity, comfort and form.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<!-- ================= ANNOUNCEMENT BAR ================= -->
+<div class="announcement-bar">Free shipping on orders over $100</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">HETQ</a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?category=T-Shirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+      <a href="shop.html#new">New Arrivals</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-trigger aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <span class="badge-count" data-wishlist-count>0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="badge-count" data-cart-count>0</span>
+      </a>
+      <button class="hamburger" data-hamburger aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE NAV ================= -->
+<div class="overlay-backdrop" data-overlay-backdrop></div>
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav-head">
+    <span class="logo">HETQ</span>
+    <button class="icon-btn" data-mobile-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=T-Shirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
+    <a href="shop.html#new">New Arrivals</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
+</div>
+
+<!-- ================= SEARCH OVERLAY ================= -->
+<div class="search-overlay" data-search-overlay>
+  <button class="icon-btn search-close" data-search-close aria-label="Close search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+  </button>
+  <div class="search-overlay-inner">
+    <span class="eyebrow">Search HETQ</span>
+    <div class="search-field">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Search products..." data-search-input autocomplete="off">
+    </div>
+    <div data-search-results>
+      <p class="search-hint">Try "tee", "long sleeve", or a color.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="eyebrow">HETQ / 2026</span>
+        <h1 class="hero-title">Essentials,<br>Redefined.</h1>
+        <p class="hero-text">Everyday pieces built around simplicity, comfort and form.</p>
+        <div class="hero-actions">
+          <a href="shop.html?category=T-Shirts" class="btn btn-primary">Shop T-Shirts</a>
+          <a href="shop.html?category=Long%20Sleeves" class="btn btn-secondary">Shop Long Sleeves</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <!-- Replace with your own HETQ hero/model image -->
+        <div class="placeholder ratio-hero">
+          <img src="images/hero/hero-main.jpg" alt="HETQ hero image" onerror="this.remove()">
+          <span>HETQ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOP BY CATEGORY ================= -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Collections</span>
+          <h2 class="section-title">Shop by Category</h2>
+        </div>
+      </div>
+      <div class="category-grid">
+        <a href="shop.html?category=T-Shirts" class="category-card reveal">
+          <!-- Replace with your own HETQ category image -->
+          <div class="placeholder ratio-portrait">
+            <img src="images/categories/tshirts.jpg" alt="HETQ T-Shirts category" onerror="this.remove()">
+            <span>T-SHIRTS</span>
+          </div>
+          <div class="category-card-content">
+            <h3>T-Shirts</h3>
+            <span class="category-card-link">Explore T-Shirts <span class="arrow">→</span></span>
+          </div>
+        </a>
+        <a href="shop.html?category=Long%20Sleeves" class="category-card reveal">
+          <!-- Replace with your own HETQ category image -->
+          <div class="placeholder ratio-portrait">
+            <img src="images/categories/longsleeves.jpg" alt="HETQ Long Sleeves category" onerror="this.remove()">
+            <span>LONG SLEEVES</span>
+          </div>
+          <div class="category-card-content">
+            <h3>Long Sleeves</h3>
+            <span class="category-card-link">Explore Long Sleeves <span class="arrow">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW ARRIVALS ================= -->
+  <section class="section section-soft" id="new">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Just In</span>
+          <h2 class="section-title">New Arrivals</h2>
+        </div>
+        <a href="shop.html#new" class="text-link">View All</a>
+      </div>
+      <div class="product-grid" data-new-arrivals></div>
+    </div>
+  </section>
+
+  <!-- ================= EDITORIAL ================= -->
+  <section class="section">
+    <div class="container editorial reveal">
+      <div class="editorial-visual">
+        <!-- Replace with your own HETQ editorial image -->
+        <div class="placeholder ratio-tall">
+          <img src="images/editorial/editorial-01.jpg" alt="HETQ editorial imagery" onerror="this.remove()">
+          <span>HETQ</span>
+        </div>
+      </div>
+      <div class="editorial-content">
+        <span class="eyebrow">The Standard</span>
+        <h2 class="section-title">Less noise.<br>Better essentials.</h2>
+        <p>HETQ exists for people who dress with intention. We design a small, considered range of everyday pieces — cut for comfort, built to last, and stripped of anything that doesn't earn its place.</p>
+        <p>No seasons. No noise. Just the essentials, done properly.</p>
+        <a href="about.html" class="text-link">Discover HETQ →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEST SELLERS ================= -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Fan Favorites</span>
+          <h2 class="section-title">Best Sellers</h2>
+        </div>
+        <a href="shop.html" class="text-link">View All</a>
+      </div>
+      <div class="product-grid" data-best-sellers></div>
+    </div>
+  </section>
+
+  <!-- ================= BRAND VALUES ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Why HETQ</span>
+          <h2 class="section-title">What We Stand For</h2>
+        </div>
+      </div>
+      <div class="values-grid reveal-stagger">
+        <div class="value-item">
+          <span class="num">01</span>
+          <h3>Quality</h3>
+          <p>Made for everyday wear.</p>
+        </div>
+        <div class="value-item">
+          <span class="num">02</span>
+          <h3>Comfort</h3>
+          <p>Designed around natural movement.</p>
+        </div>
+        <div class="value-item">
+          <span class="num">03</span>
+          <h3>Simplicity</h3>
+          <p>Nothing unnecessary.</p>
+        </div>
+        <div class="value-item">
+          <span class="num">04</span>
+          <h3>Detail</h3>
+          <p>Small decisions make the difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEWSLETTER ================= -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="newsletter reveal">
+        <h2>Stay in the Loop</h2>
+        <p>New drops, restocks and stories from HETQ.</p>
+        <form class="newsletter-form" data-newsletter-form novalidate>
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Join HETQ</button>
+        </form>
+        <p class="form-message" data-form-message></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">HETQ</span>
+        <p>Everyday essentials. Nothing unnecessary.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
+          <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
+          <li><a href="shop.html#new">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="product.html">Size Guide</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HETQ</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Sign up for early access to new drops.</p>
+        <form class="footer-newsletter-form" data-newsletter-form novalidate>
+          <input type="email" placeholder="Email address" required aria-label="Email address">
+          <button type="submit" class="icon-btn" aria-label="Subscribe" style="background:var(--burgundy)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+        <p class="form-message" data-form-message></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 HETQ. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

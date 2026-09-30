@@ -9,34 +9,28 @@
 </head>
 <body data-page="home">
 
-<!-- ================= ANNOUNCEMENT BAR ================= -->
-<div class="announcement-bar">Free shipping on orders over $100</div>
-
 <!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">HETQ</a>
+    <a href="/" class="logo">HETQ</a>
 
     <nav class="main-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="shop.html?category=T-Shirts">T-Shirts</a>
-      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-      <a href="shop.html#new">New Arrivals</a>
+      <a href="/" data-nav-key="home">Home</a>
+      <a href="shop.html" data-nav-key="shop">Shop</a>
+      <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+      <a href="about.html" data-nav-key="about">About</a>
+      <a href="#" data-nav-key="contact">Contact</a>
     </nav>
 
     <div class="header-actions">
-      <button class="icon-btn" data-search-trigger aria-label="Search">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
-        <span class="badge-count" data-wishlist-count>0</span>
-      </a>
-      <a class="icon-btn" href="cart.html" aria-label="Cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-        <span class="badge-count" data-cart-count>0</span>
-      </a>
+      <div class="lang-selector" data-lang-selector aria-label="Language selector">
+        <button type="button" class="lang-option" data-lang="HY">HY</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option active" data-lang="ENG">ENG</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option" data-lang="RUS">RUS</button>
+      </div>
       <button class="hamburger" data-hamburger aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -54,13 +48,13 @@
     </button>
   </div>
   <nav class="mobile-nav-links" aria-label="Mobile">
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="shop.html?category=T-Shirts">T-Shirts</a>
-    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-    <a href="shop.html#new">New Arrivals</a>
+    <a href="/" data-nav-key="home">Home</a>
+    <a href="shop.html" data-nav-key="shop">Shop</a>
+    <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+    <a href="about.html" data-nav-key="about">About</a>
+    <a href="#" data-nav-key="contact">Contact</a>
     <a href="wishlist.html">Wishlist</a>
-    <a href="about.html">About</a>
   </nav>
   <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
 </div>
@@ -85,96 +79,181 @@
 <!-- ================= MAIN ================= -->
 <main>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content reveal">
-        <span class="eyebrow">HETQ / 2026</span>
-        <h1 class="hero-title">Essentials,<br>Redefined.</h1>
-        <p class="hero-text">Everyday pieces built around simplicity, comfort and form.</p>
-        <div class="hero-actions">
-          <a href="shop.html?category=T-Shirts" class="btn btn-primary">Shop T-Shirts</a>
-          <a href="shop.html?category=Long%20Sleeves" class="btn btn-secondary">Shop Long Sleeves</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <!-- Replace with your own HETQ hero/model image -->
-        <div class="placeholder ratio-hero">
-          <img src="images/hero/hero-main.jpg" alt="HETQ hero image" onerror="this.remove()">
-          <span>HETQ</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ================= HERO CAROUSEL ================= -->
+  <section class="hero-carousel" data-hero-carousel aria-roledescription="carousel" aria-label="HETQ Highlights">
 
-  <!-- ================= SHOP BY CATEGORY ================= -->
-  <section class="section" id="categories">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">Collections</span>
-          <h2 class="section-title">Shop by Category</h2>
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a active" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / 2026</span>
+          <h1 class="hero-slide-title">Essentials,<br>Redefined.</h1>
+          <p class="hero-slide-text">Everyday pieces built around simplicity, comfort and form.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html?category=T-Shirts" class="btn btn-primary">Shop T-Shirts</a>
+            <a href="shop.html?category=Long%20Sleeves" class="btn btn-secondary">Shop Long Sleeves</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-1.png" alt="HETQ Essential Tee — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-1.png" alt="HETQ Essential Tee — back" onerror="this.remove()">
+          </div>
         </div>
       </div>
-      <div class="category-grid">
-        <a href="shop.html?category=T-Shirts" class="category-card reveal">
-          <!-- Replace with your own HETQ category image -->
-          <div class="placeholder ratio-portrait">
-            <img src="images/categories/tshirts.jpg" alt="HETQ T-Shirts category" onerror="this.remove()">
-            <span>T-SHIRTS</span>
-          </div>
-          <div class="category-card-content">
-            <h3>T-Shirts</h3>
-            <span class="category-card-link">Explore T-Shirts <span class="arrow">→</span></span>
-          </div>
-        </a>
-        <a href="shop.html?category=Long%20Sleeves" class="category-card reveal">
-          <!-- Replace with your own HETQ category image -->
-          <div class="placeholder ratio-portrait">
-            <img src="images/categories/longsleeves.jpg" alt="HETQ Long Sleeves category" onerror="this.remove()">
-            <span>LONG SLEEVES</span>
-          </div>
-          <div class="category-card-content">
-            <h3>Long Sleeves</h3>
-            <span class="category-card-link">Explore Long Sleeves <span class="arrow">→</span></span>
-          </div>
-        </a>
-      </div>
     </div>
-  </section>
 
-  <!-- ================= NEW ARRIVALS ================= -->
-  <section class="section section-soft" id="new">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow">Just In</span>
-          <h2 class="section-title">New Arrivals</h2>
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Collection</span>
+          <h1 class="hero-slide-title">The New<br>Standard.</h1>
+          <p class="hero-slide-text">Discover everyday essentials designed to stand apart.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html" class="btn btn-primary">Explore Collection</a>
+          </div>
         </div>
-        <a href="shop.html#new" class="text-link">View All</a>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-2.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-2.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
       </div>
-      <div class="product-grid" data-new-arrivals></div>
     </div>
-  </section>
 
-  <!-- ================= EDITORIAL ================= -->
-  <section class="section">
-    <div class="container editorial reveal">
-      <div class="editorial-visual">
-        <!-- Replace with your own HETQ editorial image -->
-        <div class="placeholder ratio-tall">
-          <img src="images/editorial/editorial-01.jpg" alt="HETQ editorial imagery" onerror="this.remove()">
-          <span>HETQ</span>
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Everyday</span>
+          <h1 class="hero-slide-title">Made for<br>Every Day.</h1>
+          <p class="hero-slide-text">Comfort, confidence and effortless style in every detail.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-3.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-3.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
         </div>
       </div>
-      <div class="editorial-content">
-        <span class="eyebrow">The Standard</span>
-        <h2 class="section-title">Less noise.<br>Better essentials.</h2>
-        <p>HETQ exists for people who dress with intention. We design a small, considered range of everyday pieces — cut for comfort, built to last, and stripped of anything that doesn't earn its place.</p>
-        <p>No seasons. No noise. Just the essentials, done properly.</p>
-        <a href="about.html" class="text-link">Discover HETQ →</a>
+    </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Philosophy</span>
+          <h1 class="hero-slide-title">Less is<br>More.</h1>
+          <p class="hero-slide-text">Clean silhouettes. Timeless colors. Endless possibilities.</p>
+          <div class="hero-slide-actions">
+            <a href="about.html" class="btn btn-primary">Discover HETQ</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-4.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-4.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Individuality</span>
+          <h1 class="hero-slide-title">Your Style.<br>Your Rules.</h1>
+          <p class="hero-slide-text">Everyday clothing designed for individual expression.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-5.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-5.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Fit</span>
+          <h1 class="hero-slide-title">The Perfect Fit.</h1>
+          <p class="hero-slide-text">Find your everyday favorite in the HETQ collection.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html?category=T-Shirts" class="btn btn-primary">Explore T-Shirts</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-6.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-6.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Elevated</span>
+          <h1 class="hero-slide-title">Beyond the<br>Basics.</h1>
+          <p class="hero-slide-text">Elevated essentials designed for modern everyday life.</p>
+          <div class="hero-slide-actions">
+            <a href="shop.html?category=Long%20Sleeves" class="btn btn-primary">Shop Long Sleeves</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-7.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-7.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / Craft</span>
+          <h1 class="hero-slide-title">Designed to Last.</h1>
+          <p class="hero-slide-text">Thoughtful details. Timeless design. Everyday comfort.</p>
+          <div class="hero-slide-actions">
+            <a href="about.html" class="btn btn-primary">Discover More</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-8.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-8.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--tone-1 hero-slide--layout-a" data-hero-slide>
+      <div class="container hero-slide-grid">
+        <div class="hero-slide-content">
+          <span class="eyebrow">HETQ / 2026</span>
+          <h1 class="hero-slide-title">This is HETQ.</h1>
+          <p class="hero-slide-text">A new perspective on everyday essentials.</p>
+          <div class="hero-slide-actions">
+            <a href="about.html" class="btn btn-primary">Explore HETQ</a>
+          </div>
+        </div>
+        <div class="hero-slide-visual">
+          <div class="placeholder ratio-hero">
+            <img class="hero-product-image-front" src="images/products/t-shirts/t-shirt-front-9.png" alt="HETQ T-Shirt — front" onerror="this.remove()">
+            <img class="hero-product-image-back" src="images/products/t-shirts/t-shirt-back-9.png" alt="HETQ T-Shirt — back" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ================= BEST SELLERS ================= -->
@@ -225,21 +304,6 @@
     </div>
   </section>
 
-  <!-- ================= NEWSLETTER ================= -->
-  <section class="section section-tight">
-    <div class="container">
-      <div class="newsletter reveal">
-        <h2>Stay in the Loop</h2>
-        <p>New drops, restocks and stories from HETQ.</p>
-        <form class="newsletter-form" data-newsletter-form novalidate>
-          <input type="email" placeholder="Your email address" required aria-label="Email address">
-          <button type="submit" class="btn btn-primary">Join HETQ</button>
-        </form>
-        <p class="form-message" data-form-message></p>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -251,19 +315,18 @@
         <p>Everyday essentials. Nothing unnecessary.</p>
       </div>
       <div class="footer-col">
-        <h4>Shop</h4>
+        <h4>Products</h4>
         <ul>
+          <li><a href="shop.html">Shop</a></li>
           <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
           <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
-          <li><a href="shop.html#new">New Arrivals</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <ul>
           <li><a href="product.html">Size Guide</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a> and <a href="#">Returns</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>

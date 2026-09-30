@@ -9,30 +9,25 @@
 </head>
 <body data-page="shop">
 
-<div class="announcement-bar">Free shipping on orders over $100</div>
-
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">HETQ</a>
+    <a href="/" class="logo">HETQ</a>
     <nav class="main-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="shop.html?category=T-Shirts">T-Shirts</a>
-      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-      <a href="shop.html#new">New Arrivals</a>
+      <a href="/" data-nav-key="home">Home</a>
+      <a href="shop.html" data-nav-key="shop">Shop</a>
+      <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+      <a href="about.html" data-nav-key="about">About</a>
+      <a href="#" data-nav-key="contact">Contact</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" data-search-trigger aria-label="Search">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
-        <span class="badge-count" data-wishlist-count>0</span>
-      </a>
-      <a class="icon-btn" href="cart.html" aria-label="Cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-        <span class="badge-count" data-cart-count>0</span>
-      </a>
+      <div class="lang-selector" data-lang-selector aria-label="Language selector">
+        <button type="button" class="lang-option" data-lang="HY">HY</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option active" data-lang="ENG">ENG</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option" data-lang="RUS">RUS</button>
+      </div>
       <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -47,13 +42,13 @@
     </button>
   </div>
   <nav class="mobile-nav-links" aria-label="Mobile">
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="shop.html?category=T-Shirts">T-Shirts</a>
-    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-    <a href="shop.html#new">New Arrivals</a>
+    <a href="/" data-nav-key="home">Home</a>
+    <a href="shop.html" data-nav-key="shop">Shop</a>
+    <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+    <a href="about.html" data-nav-key="about">About</a>
+    <a href="#" data-nav-key="contact">Contact</a>
     <a href="wishlist.html">Wishlist</a>
-    <a href="about.html">About</a>
   </nav>
   <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
 </div>
@@ -74,25 +69,18 @@
 
 <main>
   <div class="page-header">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Shop</div>
+    <div class="breadcrumb"><a href="/" data-nav-key="home">Home</a><span>/</span>Shop</div>
     <h1>Shop All</h1>
     <p>Every HETQ essential, in one place.</p>
   </div>
 
   <div class="container">
     <div class="shop-toolbar">
-      <span class="shop-count" data-shop-count>8 Products</span>
       <div class="shop-toolbar-right">
         <button class="filter-toggle" data-filter-open>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="6" r="1.6" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="1.6" fill="currentColor" stroke="none"/></svg>
           Filters
         </button>
-        <select class="sort-select" data-sort-select aria-label="Sort products">
-          <option value="featured">Featured</option>
-          <option value="newest">Newest</option>
-          <option value="price-asc">Price: Low to High</option>
-          <option value="price-desc">Price: High to Low</option>
-        </select>
       </div>
     </div>
 
@@ -113,11 +101,10 @@
             <button class="size-pill" data-filter-size="M">M</button>
             <button class="size-pill" data-filter-size="L">L</button>
             <button class="size-pill" data-filter-size="XL">XL</button>
-            <button class="size-pill" data-filter-size="XXL">XXL</button>
           </div>
         </div>
         <div class="filter-group">
-          <div class="filter-group-title">Color</div>
+          <div class="filter-group-title">Style</div>
           <div class="color-pills">
             <button class="color-pill-swatch" style="background:#6D1F2B" data-filter-color="Burgundy" aria-label="Burgundy" title="Burgundy"></button>
             <button class="color-pill-swatch" style="background:#F3EBDD" data-filter-color="Cream" aria-label="Cream" title="Cream"></button>
@@ -165,11 +152,10 @@
         <button class="size-pill" data-filter-size="M">M</button>
         <button class="size-pill" data-filter-size="L">L</button>
         <button class="size-pill" data-filter-size="XL">XL</button>
-        <button class="size-pill" data-filter-size="XXL">XXL</button>
       </div>
     </div>
     <div class="filter-group">
-      <div class="filter-group-title">Color</div>
+      <div class="filter-group-title">Style</div>
       <div class="color-pills">
         <button class="color-pill-swatch" style="background:#6D1F2B" data-filter-color="Burgundy" aria-label="Burgundy"></button>
         <button class="color-pill-swatch" style="background:#F3EBDD" data-filter-color="Cream" aria-label="Cream"></button>
@@ -197,19 +183,18 @@
         <p>Everyday essentials. Nothing unnecessary.</p>
       </div>
       <div class="footer-col">
-        <h4>Shop</h4>
+        <h4>Products</h4>
         <ul>
-          <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
-          <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
-          <li><a href="shop.html#new">New Arrivals</a></li>
+          <li><a href="shop.html" data-nav-key="shop">Shop</a></li>
+          <li><a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a></li>
+          <li><a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <ul>
           <li><a href="product.html">Size Guide</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a> and <a href="#">Returns</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>

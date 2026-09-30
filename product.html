@@ -9,30 +9,25 @@
 </head>
 <body data-page="product">
 
-<div class="announcement-bar">Free shipping on orders over $100</div>
-
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">HETQ</a>
+    <a href="/" class="logo">HETQ</a>
     <nav class="main-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="shop.html?category=T-Shirts">T-Shirts</a>
-      <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-      <a href="shop.html#new">New Arrivals</a>
+      <a href="/" data-nav-key="home">Home</a>
+      <a href="shop.html" data-nav-key="shop">Shop</a>
+      <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+      <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+      <a href="about.html" data-nav-key="about">About</a>
+      <a href="#" data-nav-key="contact">Contact</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-btn" data-search-trigger aria-label="Search">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s-7.5-4.6-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 6 3.6C14.3 5.2 15.8 4 18 4c4 0 5.5 4 4 7.7C19.5 16.4 12 21 12 21z"/></svg>
-        <span class="badge-count" data-wishlist-count>0</span>
-      </a>
-      <a class="icon-btn" href="cart.html" aria-label="Cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-        <span class="badge-count" data-cart-count>0</span>
-      </a>
+      <div class="lang-selector" data-lang-selector aria-label="Language selector">
+        <button type="button" class="lang-option" data-lang="HY">HY</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option active" data-lang="ENG">ENG</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-option" data-lang="RUS">RUS</button>
+      </div>
       <button class="hamburger" data-hamburger aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -47,13 +42,13 @@
     </button>
   </div>
   <nav class="mobile-nav-links" aria-label="Mobile">
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="shop.html?category=T-Shirts">T-Shirts</a>
-    <a href="shop.html?category=Long%20Sleeves">Long Sleeves</a>
-    <a href="shop.html#new">New Arrivals</a>
+    <a href="/" data-nav-key="home">Home</a>
+    <a href="shop.html" data-nav-key="shop">Shop</a>
+    <a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a>
+    <a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a>
+    <a href="about.html" data-nav-key="about">About</a>
+    <a href="#" data-nav-key="contact">Contact</a>
     <a href="wishlist.html">Wishlist</a>
-    <a href="about.html">About</a>
   </nav>
   <div class="mobile-nav-foot">HETQ — Everyday essentials. Nothing unnecessary.</div>
 </div>
@@ -74,7 +69,7 @@
 
 <main>
   <div class="container" style="padding-top:24px;">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span data-product-category>Product</span></div>
+    <div class="breadcrumb"><a href="/" data-nav-key="home">Home</a><span>/</span><a href="shop.html" data-nav-key="shop">Shop</a><span>/</span><span data-product-category>Product</span></div>
   </div>
 
   <section class="section section-tight">
@@ -217,19 +212,18 @@
         <p>Everyday essentials. Nothing unnecessary.</p>
       </div>
       <div class="footer-col">
-        <h4>Shop</h4>
+        <h4>Products</h4>
         <ul>
-          <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
-          <li><a href="shop.html?category=Long%20Sleeves">Long Sleeves</a></li>
-          <li><a href="shop.html#new">New Arrivals</a></li>
+          <li><a href="shop.html" data-nav-key="shop">Shop</a></li>
+          <li><a href="shop.html?category=T-Shirts" data-nav-key="tshirts">T-Shirts</a></li>
+          <li><a href="shop.html?category=Long%20Sleeves" data-nav-key="longsleeves">Long Sleeves</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <ul>
           <li><a href="product.html">Size Guide</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a> and <a href="#">Returns</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>

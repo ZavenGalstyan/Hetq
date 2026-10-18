@@ -634,39 +634,42 @@ h1, h2, h3, h4 {
 .hero-slide-visual { flex: 1 1 46%; }
 .hero-slide-visual .placeholder { aspect-ratio: 3/4; }
 
-/* Hero product image: front image shows by default, back image crossfades
-   in on hover. Both images are absolutely stacked in the same box (the
-   placeholder's own size is fixed via aspect-ratio), so nothing shifts. */
+/* Hero product image: white/black front/back images are absolutely stacked
+   in the same box (the placeholder's own size is fixed via aspect-ratio), so
+   nothing shifts. initHeroVariantPreview() in main.js moves .is-shown between
+   them. The incoming image fades in on top while the outgoing one stays
+   opaque underneath until it's covered, so the crossfade never dips to the
+   background. Photos are 2:3 in a 3:4 box: cover fills it, cropping a little
+   top/bottom, biased upward so heads are never cut. */
 .hero-slide-visual .placeholder img.hero-product-image-front,
 .hero-slide-visual .placeholder img.hero-product-image-back {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 50% 30%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease 0.5s, transform 0.5s ease;
+}
+
+.hero-slide-visual .placeholder img.is-shown {
+  opacity: 1;
+  z-index: 2;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.hero-slide-visual .placeholder img.hero-product-image-front { opacity: 1; z-index: 2; }
-.hero-slide-visual .placeholder img.hero-product-image-back { opacity: 0; z-index: 1; transform: scale(1); }
-
-/* Hover only on devices with real hover + a precise pointer (desktop mice) —
-   touch/tablet always keeps showing the front image. */
-@media (hover: hover) and (pointer: fine) {
-  .hero-slide-visual .placeholder:hover img.hero-product-image-front { opacity: 0; }
-  .hero-slide-visual .placeholder:hover img.hero-product-image-back {
-    opacity: 1;
-    transform: scale(1.015);
-  }
-}
+.hero-slide-visual .placeholder[data-hero-product] { cursor: pointer; }
+.hero-slide-visual .placeholder img.hero-product-image-back.is-shown { transform: scale(1.015); }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-slide-visual .placeholder img.hero-product-image-front,
-  .hero-slide-visual .placeholder img.hero-product-image-back {
+  .hero-slide-visual .placeholder img.hero-product-image-back,
+  .hero-slide-visual .placeholder img.is-shown {
     transition: opacity 0.3s ease;
     transform: none;
   }
-  .hero-slide-visual .placeholder:hover img.hero-product-image-back { transform: none; }
 }
 
 /* All slides share this single template — only text/links differ per slide */
@@ -748,7 +751,8 @@ h1, h2, h3, h4 {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 50% 30%;
   transition: opacity 0.45s ease;
 }
 
@@ -1202,7 +1206,7 @@ h1, h2, h3, h4 {
 
 .gallery-thumbs .placeholder.active { border-color: var(--burgundy); }
 .gallery-thumbs .placeholder span { font-size: 0.5rem; }
-.gallery-thumbs .placeholder img { object-fit: contain; }
+.gallery-thumbs .placeholder img { object-fit: cover; object-position: 50% 30%; }
 
 .product-info-panel { max-width: 480px; }
 
@@ -1679,10 +1683,16 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 900px) {
+  /* Stacked (image over text) slides are taller than a fixed min-height, so
+     all slides share one grid cell instead: the carousel grows to the tallest
+     slide and nothing (heads, buttons) gets clipped. Fading is unchanged. */
   .hero-carousel {
-    min-height: clamp(620px, 130vw, 780px);
+    display: grid;
+    min-height: 0;
     margin-top: calc(var(--header-height, 76px) + 24px);
   }
+  .hero-slide { position: relative; inset: auto; grid-area: 1 / 1; }
+  .hero-slide-visual .placeholder { max-width: 420px; margin-inline: auto; }
   .hero-slide-grid { flex-direction: column !important; text-align: center; padding-block: 48px 36px; }
   .hero-slide-content, .hero-slide-visual { max-width: 100%; width: 100%; }
   .hero-slide-visual { order: -1; }

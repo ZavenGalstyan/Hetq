@@ -13,10 +13,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Essential Tee",
     category: "T-Shirts",
     price: 49,
-    colors: ["Burgundy", "Cream", "Black"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-1.png",
-    backImage: "images/products/t-shirts/t-shirt-back-1.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-1.png", back: "images/products/t-shirts/t-shirt-back-1.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-1.png", back: "images/products/t-shirts/t-shirt-black-back-1.png" }
+    },
     isNew: true,
     bestSeller: true,
     description: "The foundation of the HETQ wardrobe. Cut from heavyweight combed cotton for a clean drape and lasting shape."
@@ -26,10 +27,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Heavy Tee",
     category: "T-Shirts",
     price: 58,
-    colors: ["Black", "Cream", "Brown"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-2.png",
-    backImage: "images/products/t-shirts/t-shirt-back-2.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-2.png", back: "images/products/t-shirts/t-shirt-back-2.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-2.png", back: "images/products/t-shirts/t-shirt-black-back-2.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "A dense, structured tee with a boxy silhouette. Built for everyday wear that only gets better with age."
@@ -39,10 +41,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Everyday Tee",
     category: "T-Shirts",
     price: 45,
-    colors: ["Cream", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-3.png",
-    backImage: "images/products/t-shirts/t-shirt-back-3.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-3.png", back: "images/products/t-shirts/t-shirt-back-3.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-3.png", back: "images/products/t-shirts/t-shirt-black-back-3.png" }
+    },
     isNew: false,
     bestSeller: true,
     description: "Soft-washed jersey with a slightly tapered fit. The tee you reach for without thinking."
@@ -52,10 +55,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Boxy Tee",
     category: "T-Shirts",
     price: 52,
-    colors: ["Black", "Brown"],
     sizes: ["S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-4.png",
-    backImage: "images/products/t-shirts/t-shirt-back-4.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-4.png", back: "images/products/t-shirts/t-shirt-back-4.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-4.png", back: "images/products/t-shirts/t-shirt-black-back-4.png" }
+    },
     isNew: false,
     bestSeller: true,
     description: "A wider, cropped-shoulder cut for a modern silhouette. Pairs cleanly with anything in your rotation."
@@ -65,10 +69,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Relaxed Tee",
     category: "T-Shirts",
     price: 47,
-    colors: ["Cream", "Black", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-5.png",
-    backImage: "images/products/t-shirts/t-shirt-back-5.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-5.png", back: "images/products/t-shirts/t-shirt-back-5.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-5.png", back: "images/products/t-shirts/t-shirt-black-back-5.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "An easy, relaxed fit with a soft hand-feel. Built for warm days and slow mornings."
@@ -78,10 +83,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Cropped Tee",
     category: "T-Shirts",
     price: 44,
-    colors: ["Black", "Cream"],
     sizes: ["XS", "S", "M", "L"],
-    frontImage: "images/products/t-shirts/t-shirt-front-6.png",
-    backImage: "images/products/t-shirts/t-shirt-back-6.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-6.png", back: "images/products/t-shirts/t-shirt-back-6.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-6.png", back: "images/products/t-shirts/t-shirt-black-back-6.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "A cropped length with a clean, minimal finish. A modern staple for everyday layering."
@@ -91,10 +97,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Structured Tee",
     category: "T-Shirts",
     price: 54,
-    colors: ["Burgundy", "Black", "Brown"],
     sizes: ["S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-7.png",
-    backImage: "images/products/t-shirts/t-shirt-back-7.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-back-7.png", back: "images/products/t-shirts/t-shirt-front-7.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-7.png", back: "images/products/t-shirts/t-shirt-black-back-7.png" }
+    },
     isNew: false,
     bestSeller: false,
     description: "A structured shoulder and dense weave give this tee a sharper, more considered shape."
@@ -104,10 +111,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Signature Tee",
     category: "T-Shirts",
     price: 56,
-    colors: ["Black", "Cream", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-8.png",
-    backImage: "images/products/t-shirts/t-shirt-back-8.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-8.png", back: "images/products/t-shirts/t-shirt-back-8.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-8.png", back: "images/products/t-shirts/t-shirt-black-back-8.png" }
+    },
     isNew: true,
     bestSeller: true,
     description: "Our signature graphic tee, printed in-house on heavyweight cotton for a lasting finish."
@@ -117,10 +125,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Classic Tee",
     category: "T-Shirts",
     price: 46,
-    colors: ["Cream", "Brown"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/t-shirts/t-shirt-front-9.png",
-    backImage: "images/products/t-shirts/t-shirt-back-9.png",
+    variants: {
+      White: { front: "images/products/t-shirts/t-shirt-front-9.png", back: "images/products/t-shirts/t-shirt-back-9.png" },
+      Black: { front: "images/products/t-shirts/t-shirt-black-front-9.png", back: "images/products/t-shirts/t-shirt-black-back-9.png" }
+    },
     isNew: false,
     bestSeller: false,
     description: "A classic, no-fuss tee designed to be worn on repeat. Simple, considered, essential."
@@ -130,10 +139,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Core Long Sleeve",
     category: "Long Sleeves",
     price: 68,
-    colors: ["Burgundy", "Black", "Cream"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/long-sleeves/long-front-1.png",
-    backImage: "images/products/long-sleeves/long-back-1.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-1.png", back: "images/products/long-sleeves/long-back-1.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-1.png", back: "images/products/long-sleeves/long-black-back-1.png" }
+    },
     isNew: true,
     bestSeller: true,
     description: "A refined long sleeve designed for layering or wearing alone. Ribbed cuffs, clean lines, no distractions."
@@ -143,10 +153,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Oversized Long Sleeve",
     category: "Long Sleeves",
     price: 74,
-    colors: ["Brown", "Black", "Burgundy"],
     sizes: ["S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/long-sleeves/long-front-2.png",
-    backImage: "images/products/long-sleeves/long-back-2.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-2.png", back: "images/products/long-sleeves/long-back-2.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-2.png", back: "images/products/long-sleeves/long-black-back-2.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "Relaxed through the body with a dropped shoulder. A quiet statement piece for cooler days."
@@ -156,10 +167,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Ribbed Long Sleeve",
     category: "Long Sleeves",
     price: 64,
-    colors: ["Cream", "Black", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/long-sleeves/long-front-3.png",
-    backImage: "images/products/long-sleeves/long-back-3.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-3.png", back: "images/products/long-sleeves/long-back-3.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-3.png", back: "images/products/long-sleeves/long-black-back-3.png" }
+    },
     isNew: false,
     bestSeller: true,
     description: "Fine ribbed construction for a closer, more elevated fit. Wear it solo or under an open shirt."
@@ -169,10 +181,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Mock Neck Long Sleeve",
     category: "Long Sleeves",
     price: 72,
-    colors: ["Brown", "Black"],
     sizes: ["S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/long-sleeves/long-front-4.png",
-    backImage: "images/products/long-sleeves/long-back-4.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-4.png", back: "images/products/long-sleeves/long-back-4.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-4.png", back: "images/products/long-sleeves/long-black-back-4.png" }
+    },
     isNew: false,
     bestSeller: false,
     description: "A subtle mock neckline elevates this staple long sleeve. Structured, warm, and understated."
@@ -182,10 +195,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Waffle Long Sleeve",
     category: "Long Sleeves",
     price: 66,
-    colors: ["Cream", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL"],
-    frontImage: "images/products/long-sleeves/long-front-5.png",
-    backImage: "images/products/long-sleeves/long-back-5.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-5.png", back: "images/products/long-sleeves/long-back-5.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-5.png", back: "images/products/long-sleeves/long-black-back-5.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "A waffle-knit texture adds quiet depth to this everyday long sleeve."
@@ -195,10 +209,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Henley Long Sleeve",
     category: "Long Sleeves",
     price: 70,
-    colors: ["Black", "Brown"],
     sizes: ["S", "M", "L", "XL"],
-    frontImage: "images/products/long-sleeves/long-front-6.png",
-    backImage: "images/products/long-sleeves/long-back-6.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-6.png", back: "images/products/long-sleeves/long-back-6.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-6.png", back: "images/products/long-sleeves/long-black-back-6.png" }
+    },
     isNew: true,
     bestSeller: false,
     description: "A henley placket brings a considered detail to this heavyweight long sleeve."
@@ -208,10 +223,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Crew Long Sleeve",
     category: "Long Sleeves",
     price: 62,
-    colors: ["Cream", "Black", "Brown"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/long-sleeves/long-front-7.png",
-    backImage: "images/products/long-sleeves/long-back-7.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-7.png", back: "images/products/long-sleeves/long-back-7.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-7.png", back: "images/products/long-sleeves/long-black-back-7.png" }
+    },
     isNew: false,
     bestSeller: false,
     description: "A classic crew neckline in a clean, versatile fit. Built for everyday rotation."
@@ -221,10 +237,11 @@ const HETQ_PRODUCTS = [
     name: "HETQ Textured Long Sleeve",
     category: "Long Sleeves",
     price: 76,
-    colors: ["Burgundy", "Black"],
     sizes: ["S", "M", "L", "XL"],
-    frontImage: "images/products/long-sleeves/long-front-8.png",
-    backImage: "images/products/long-sleeves/long-back-8.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-front-8.png", back: "images/products/long-sleeves/long-back-8.png" },
+      Black: { front: "images/products/long-sleeves/long-black-front-8.png", back: "images/products/long-sleeves/long-black-back-8.png" }
+    },
     isNew: false,
     bestSeller: true,
     description: "A textured weave gives this long sleeve a subtle, elevated finish."
@@ -234,22 +251,32 @@ const HETQ_PRODUCTS = [
     name: "HETQ Signature Long Sleeve",
     category: "Long Sleeves",
     price: 78,
-    colors: ["Black", "Cream", "Burgundy"],
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    frontImage: "images/products/long-sleeves/long-back-9.png",
-    backImage: "images/products/long-sleeves/long-front-9.png",
+    variants: {
+      White: { front: "images/products/long-sleeves/long-back-9.png", back: "images/products/long-sleeves/long-front-9.png" }
+    },
     isNew: true,
     bestSeller: true,
     description: "Our signature graphic long sleeve, printed in-house on heavyweight cotton for a lasting finish."
   }
 ];
 
+// A product's available colors are exactly the variants it has images for.
+HETQ_PRODUCTS.forEach((p) => { p.colors = Object.keys(p.variants); });
+
 const COLOR_HEX = {
-  Burgundy: "#6D1F2B",
-  Cream: "#F3EBDD",
-  Black: "#211A17",
-  Brown: "#6B4A38"
+  White: "#FFFFFF",
+  Black: "#211A17"
 };
+
+// Front/back images for a color, falling back to the product's first color.
+function getProductImages(product, color) {
+  return product.variants[color] || product.variants[product.colors[0]];
+}
+
+function hasColor(product, color) {
+  return Boolean(product.variants[color]);
+}
 
 /* ---------------------------------------------------------
    2. STORAGE HELPERS (cart + wishlist)
@@ -326,12 +353,13 @@ function updateHeaderCounts() {
    3. PRODUCT CARD RENDERING (reusable across pages)
    --------------------------------------------------------- */
 function productCardHTML(product, options = {}) {
-  const { showWishlist = true } = options;
+  const { showWishlist = true, colors = [] } = options;
   const wishlisted = Store.isWishlisted(product.id);
-  const badge = product.isNew
+  const shownColor = colors.find((c) => hasColor(product, c)) || product.colors[0];
+  const images = getProductImages(product, shownColor);
+  const href = `product.html?id=${product.id}${shownColor !== product.colors[0] ? `&color=${shownColor}` : ""}`;
+  const badge = product.isNew || product.bestSeller
     ? '<span class="product-badge">New</span>'
-    : product.bestSeller
-    ? '<span class="product-badge">Best Seller</span>'
     : "";
 
   const wishlistBtn = showWishlist
@@ -350,19 +378,19 @@ function productCardHTML(product, options = {}) {
   return `
   <article class="product-card" data-id="${product.id}">
     <div class="product-media">
-      <a href="product.html?id=${product.id}" aria-label="View ${product.name}">
+      <a href="${href}" aria-label="View ${product.name}">
         <div class="placeholder ratio-portrait product-image-flip">
-          <img class="front-image" src="${product.frontImage}" alt="${product.name} — front" onerror="this.remove()">
-          <img class="back-image" src="${product.backImage}" alt="${product.name} — back" onerror="this.remove()">
+          <img class="front-image" src="${images.front}" alt="${product.name} (${shownColor}) — front" onerror="this.remove()">
+          <img class="back-image" src="${images.back}" alt="${product.name} (${shownColor}) — back" onerror="this.remove()">
         </div>
       </a>
       ${badge}
       ${wishlistBtn}
       <div class="quick-add">
-        <button class="btn btn-primary btn-block btn-sm" data-quick-add="${product.id}">Quick Add</button>
+        <button class="btn btn-primary btn-block btn-sm" data-quick-add="${product.id}" data-quick-add-color="${shownColor}">Quick Add</button>
       </div>
     </div>
-    <a href="product.html?id=${product.id}" class="product-info">
+    <a href="${href}" class="product-info">
       <div class="cat">${product.category}</div>
       <div class="name">${product.name}</div>
       <div class="price">$${product.price}</div>
@@ -399,15 +427,16 @@ document.addEventListener("click", (e) => {
     const id = Number(quickAddBtn.dataset.quickAdd);
     const product = HETQ_PRODUCTS.find((p) => p.id === id);
     if (product) {
+      const color = hasColor(product, quickAddBtn.dataset.quickAddColor) ? quickAddBtn.dataset.quickAddColor : product.colors[0];
       Store.addToCart({
         id: product.id,
         name: product.name,
         category: product.category,
         price: product.price,
-        color: product.colors[0],
+        color,
         size: product.sizes[Math.floor(product.sizes.length / 2)],
         qty: 1,
-        image: product.frontImage
+        image: getProductImages(product, color).front
       });
       flashButton(quickAddBtn, "Added");
     }
@@ -723,9 +752,16 @@ function initHeroCarousel() {
 
   let index = Math.max(0, slides.findIndex((s) => s.classList.contains("active")));
   let timer = null;
+  let paused = false; // true while the user is previewing a slide's product
+
+  const previews = slides.map((slide) => initHeroVariantPreview(slide, {
+    pause() { paused = true; stop(); },
+    resume() { paused = false; start(); }
+  }));
 
   function goToNext() {
     slides[index].classList.remove("active");
+    previews[index]?.reset();
     index = (index + 1) % slides.length;
     slides[index].classList.add("active");
   }
@@ -733,7 +769,7 @@ function initHeroCarousel() {
   // Autoplay keeps running under prefers-reduced-motion — only the CSS
   // transition simplifies to a plain fade (see the reduced-motion query).
   function start() {
-    if (document.hidden) return;
+    if (document.hidden || paused) return;
     stop();
     timer = setInterval(goToNext, INTERVAL);
   }
@@ -751,6 +787,83 @@ function initHeroCarousel() {
   });
 
   start();
+}
+
+/* Hero product preview, all within one slide (the slide index never changes):
+   white front → hover shows white back → after BLACK_DELAY of continuous hover
+   the black front fades in, then the black back after another BLACK_DELAY.
+   Leaving resets to the white front. Touch devices (no hover) tap through the
+   same four views instead. Slides whose product has no black variant just
+   flip front/back. */
+function initHeroVariantPreview(slide, autoplay) {
+  const box = slide.querySelector("[data-hero-product]");
+  if (!box) return null;
+  const product = HETQ_PRODUCTS.find((p) => p.id === Number(box.dataset.heroProduct));
+  if (!product) return null;
+
+  const BLACK_DELAY = 2500;
+  const TOUCH_IDLE = 6000; // resume autoplay this long after the last tap
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  // The white images are already in the markup; add the black pair if one exists.
+  if (hasColor(product, "Black")) {
+    const black = getProductImages(product, "Black");
+    box.insertAdjacentHTML("beforeend", `
+      <img class="hero-product-image-front" data-variant="Black" src="${black.front}" alt="${product.name} (Black) — front" onerror="this.remove()">
+      <img class="hero-product-image-back" data-variant="Black" src="${black.back}" alt="${product.name} (Black) — back" onerror="this.remove()">`);
+  }
+  box.querySelectorAll("img:not([data-variant])").forEach((img) => (img.dataset.variant = "White"));
+
+  const views = [["White", "front"], ["White", "back"]];
+  if (box.querySelector('img[data-variant="Black"]')) views.push(["Black", "front"], ["Black", "back"]);
+
+  let step = 0;
+  let timers = [];
+
+  function show(nextStep) {
+    step = nextStep;
+    const [variant, side] = views[step];
+    box.querySelectorAll("img").forEach((img) => {
+      const isSide = img.classList.contains(`hero-product-image-${side}`);
+      img.classList.toggle("is-shown", img.dataset.variant === variant && isSide);
+    });
+    box.classList.toggle("is-previewing", step > 0);
+  }
+
+  function clearTimers() {
+    timers.forEach(clearTimeout);
+    timers = [];
+  }
+
+  function reset() {
+    clearTimers();
+    show(0);
+  }
+
+  if (canHover) {
+    box.addEventListener("mouseenter", () => {
+      autoplay.pause();
+      clearTimers();
+      show(1);
+      for (let s = 2; s < views.length; s++) {
+        timers.push(setTimeout(() => show(s), BLACK_DELAY * (s - 1)));
+      }
+    });
+    box.addEventListener("mouseleave", () => {
+      reset();
+      autoplay.resume();
+    });
+  } else {
+    box.addEventListener("click", () => {
+      autoplay.pause();
+      clearTimers();
+      show((step + 1) % views.length);
+      timers.push(setTimeout(() => { reset(); autoplay.resume(); }, TOUCH_IDLE));
+    });
+  }
+
+  show(0);
+  return { reset };
 }
 
 /* ---------------------------------------------------------
@@ -806,7 +919,7 @@ function initShopPage() {
     let results = HETQ_PRODUCTS.filter((p) => {
       if (state.category !== "All" && p.category !== state.category) return false;
       if (state.sizes.length && !state.sizes.some((s) => p.sizes.includes(s))) return false;
-      if (state.colors.length && !state.colors.some((c) => p.colors.includes(c))) return false;
+      if (state.colors.length && !state.colors.some((c) => hasColor(p, c))) return false;
       if (p.price > state.maxPrice) return false;
       return true;
     });
@@ -825,7 +938,9 @@ function initShopPage() {
         break; // featured = default order
     }
 
-    renderProductGrid(grid, results, { showWishlist: false });
+    // With a color filter active, each card shows its images in the first
+    // selected color that product actually comes in.
+    renderProductGrid(grid, results, { showWishlist: false, colors: state.colors });
     if (countEl) countEl.textContent = `${results.length} PRODUCT${results.length === 1 ? "" : "S"}`;
   }
 
@@ -855,12 +970,14 @@ function initShopPage() {
   document.querySelectorAll("[data-filter-color]").forEach((swatch) => {
     swatch.addEventListener("click", () => {
       const color = swatch.dataset.filterColor;
-      swatch.classList.toggle("active");
       if (state.colors.includes(color)) {
         state.colors = state.colors.filter((c) => c !== color);
       } else {
         state.colors.push(color);
       }
+      // Keep the desktop sidebar and mobile drawer swatches in sync.
+      document.querySelectorAll(`[data-filter-color="${color}"]`).forEach((s) =>
+        s.classList.toggle("active", state.colors.includes(color)));
       applyFilters();
     });
   });
@@ -918,7 +1035,8 @@ function initProductPage() {
   const id = Number(params.get("id")) || HETQ_PRODUCTS[0].id;
   const product = HETQ_PRODUCTS.find((p) => p.id === id) || HETQ_PRODUCTS[0];
 
-  const state = { color: product.colors[0], size: null, qty: 1 };
+  const presetColor = params.get("color");
+  const state = { color: hasColor(product, presetColor) ? presetColor : product.colors[0], size: null, qty: 1 };
 
   // Basic info
   document.querySelectorAll("[data-product-name]").forEach((el) => (el.textContent = product.name));
@@ -931,21 +1049,22 @@ function initProductPage() {
   // product cards; thumbnails let touch users (or anyone) pin either view.
   const galleryMain = document.querySelector("[data-gallery-main]");
   const galleryThumbs = document.querySelector("[data-gallery-thumbs]");
+  const initialImages = getProductImages(product, state.color);
   if (galleryMain) {
     galleryMain.innerHTML = `
       <div class="placeholder ratio-portrait product-image-flip">
-        <img class="front-image" src="${product.frontImage}" alt="${product.name} — front" onerror="this.remove()">
-        <img class="back-image" src="${product.backImage}" alt="${product.name} — back" onerror="this.remove()">
+        <img class="front-image" src="${initialImages.front}" alt="${product.name} (${state.color}) — front">
+        <img class="back-image" src="${initialImages.back}" alt="${product.name} (${state.color}) — back">
       </div>`;
   }
   if (galleryThumbs) {
     const views = [
-      { key: "front", label: "Front", src: product.frontImage },
-      { key: "back", label: "Back", src: product.backImage }
+      { key: "front", label: "Front" },
+      { key: "back", label: "Back" }
     ];
     galleryThumbs.innerHTML = views.map((v, i) => `
       <div class="placeholder ratio-portrait ${i === 0 ? "active" : ""}" data-thumb="${v.key}">
-        <img src="${v.src}" alt="${product.name} — ${v.label}" onerror="this.remove()">
+        <img src="${initialImages[v.key]}" alt="${product.name} (${state.color}) — ${v.label}">
       </div>
     `).join("");
     const mainFront = galleryMain?.querySelector(".front-image");
@@ -963,19 +1082,42 @@ function initProductPage() {
     });
   }
 
+  // Swap the gallery (main + thumbs) to the selected color's front/back
+  // images in place — the current front/back view selection is kept.
+  function updateGalleryColor(color) {
+    const images = getProductImages(product, color);
+    ["front", "back"].forEach((side) => {
+      const label = side === "front" ? "Front" : "Back";
+      const main = galleryMain?.querySelector(`.${side}-image`);
+      const thumb = galleryThumbs?.querySelector(`[data-thumb="${side}"] img`);
+      [main, thumb].forEach((img) => {
+        if (!img) return;
+        img.src = images[side];
+        img.alt = `${product.name} (${color}) — ${main === img ? side : label}`;
+      });
+    });
+  }
+
   // Color swatches
   const colorContainer = document.querySelector("[data-color-swatches]");
   const selectedColorLabel = document.querySelector("[data-selected-color]");
   if (colorContainer) {
-    colorContainer.innerHTML = product.colors.map((c, i) => `
-      <button class="color-swatch ${i === 0 ? "active" : ""}" style="background:${COLOR_HEX[c]}" data-color="${c}" aria-label="${c}" title="${c}"></button>
+    colorContainer.innerHTML = product.colors.map((c) => `
+      <button class="color-swatch ${c === state.color ? "active" : ""}" style="background:${COLOR_HEX[c]}" data-color="${c}" aria-label="${c}" aria-pressed="${c === state.color}" title="${c}"></button>
     `).join("");
     colorContainer.querySelectorAll(".color-swatch").forEach((btn) => {
       btn.addEventListener("click", () => {
-        colorContainer.querySelectorAll(".color-swatch").forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
+        colorContainer.querySelectorAll(".color-swatch").forEach((b) => {
+          b.classList.toggle("active", b === btn);
+          b.setAttribute("aria-pressed", b === btn);
+        });
         state.color = btn.dataset.color;
         if (selectedColorLabel) selectedColorLabel.textContent = state.color;
+        updateGalleryColor(state.color);
+        // Keep the URL shareable without navigating away from the product.
+        const url = new URL(window.location.href);
+        url.searchParams.set("color", state.color);
+        history.replaceState(null, "", url);
       });
     });
   }
@@ -1029,7 +1171,7 @@ function initProductPage() {
       color: state.color,
       size: state.size,
       qty: state.qty,
-      image: product.frontImage
+      image: getProductImages(product, state.color).front
     });
     flashButton(e.currentTarget, "Added to Cart");
   });
@@ -1041,7 +1183,7 @@ function initProductPage() {
     }
     Store.addToCart({
       id: product.id, name: product.name, category: product.category, price: product.price,
-      color: state.color, size: state.size, qty: state.qty, image: product.frontImage
+      color: state.color, size: state.size, qty: state.qty, image: getProductImages(product, state.color).front
     });
     window.location.href = "checkout.html";
   });
@@ -1162,8 +1304,8 @@ function renderWishlistPage() {
         <div class="product-media">
           <a href="product.html?id=${p.id}">
             <div class="placeholder ratio-portrait product-image-flip">
-              <img class="front-image" src="${p.frontImage}" alt="${p.name} — front" onerror="this.remove()">
-              <img class="back-image" src="${p.backImage}" alt="${p.name} — back" onerror="this.remove()">
+              <img class="front-image" src="${getProductImages(p).front}" alt="${p.name} — front" onerror="this.remove()">
+              <img class="back-image" src="${getProductImages(p).back}" alt="${p.name} — back" onerror="this.remove()">
             </div>
           </a>
         </div>
@@ -1184,7 +1326,7 @@ function renderWishlistPage() {
         const product = HETQ_PRODUCTS.find((p) => p.id === Number(btn.dataset.moveToCart));
         Store.addToCart({
           id: product.id, name: product.name, category: product.category, price: product.price,
-          color: product.colors[0], size: product.sizes[0], qty: 1, image: product.frontImage
+          color: product.colors[0], size: product.sizes[0], qty: 1, image: getProductImages(product).front
         });
         flashButton(btn, "Added");
       });
